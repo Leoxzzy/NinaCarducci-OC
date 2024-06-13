@@ -4,27 +4,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	
+	<!-- Preload des fichiers CSS / JS de bootstrap -->
 	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" />
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="preload" href="./assets/bootstrap/bootstrap.bundle.js" as="script" />
+	
+	<!-- Preload des fichiers JS de jquery -->
+	<link rel="preload" href="https://code.jquery.com/jquery-3.4.1.min.js" as="script" />
 
+	<!-- Preload des fichiers JS -->
+	<link rel="preload" href="./assets/maugallery.js" as="script" />
+	<link rel="preload" href="./assets/scripts.js" as="script" />
+	
+	<!-- Preload des fichiers CSS -->
 	<link rel="preload" href="./assets/style.css" as="style" />
+
+
+	<!-- Appels des fichiers CSS -->
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 
+	<!-- Appels des fonts google -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
-	<link rel="preload" href="./assets/bootstrap/bootstrap.bundle.js" as="script" />
+	<!-- Appels des fichiers JS de Bootstrap & JQuery -->
 	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-
-	<link rel="preload" href="https://code.jquery.com/jquery-3.4.1.min.js" as="script" />
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	
-	<link rel="preload" href="./assets/maugallery.js" as="script" />
-	<script src="./assets/maugallery.js"></script>
 
-	<link rel="preload" href="./assets/scripts.js" as="script" />
+	<!-- Appels des fichiers JS local -->
 	<script src="./assets/scripts.js"></script>
+	<script src="./assets/maugallery.js"></script>
 </head>
 <body>
 <div class="top-header">
