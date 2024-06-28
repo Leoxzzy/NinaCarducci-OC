@@ -158,16 +158,13 @@
     },
     nextImage() {
       let activeImage = null;
-
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
         }
       });
-
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
       let imagesCollection = [];
-
       if (activeTag === "all") {
         $(".item-column").each(function() {
           if ($(this).children("img").length) {
@@ -185,7 +182,6 @@
           }
         });
       }
-
       let index = 0,
         next = null;
 
@@ -194,7 +190,7 @@
           index = i;
         }
       });
-
+      
       next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
