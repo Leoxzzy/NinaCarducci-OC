@@ -363,3 +363,8 @@ input[type="submit"] {
 		width: 100%;
 	}
 }
+
+
+.carousel-item img {
+	height: 46.875vw;
+}
