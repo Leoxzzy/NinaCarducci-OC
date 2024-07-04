@@ -54,23 +54,28 @@ body {
 	height: 720px;
 }
 
-.picture.left::before {
-	content: ' ';
-	background-color: #E5975F;
-	width: 374px;
-	height: 329px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-}
-
 .picture {
+	box-sizing: border-box;
 	width: 400px;
 	height: 400px;
 
 	margin: 0 20px;
 	z-index: 0;
+}
+
+
+.picture.left::before {
+	content: ' ';
+	display: block;
+	position: absolute;
+
+	background-color: #E5975F;
+	width: 374px;
+	height: 329px;
+	
+	margin-left: -55px;
+	margin-top: 125px;
+	z-index: -1;
 }
 
 .picture img {
@@ -266,10 +271,13 @@ input[type="submit"] {
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
+		
 		position: absolute;
-		bottom: auto;
 		top: 0;
 		left: 0;
+		bottom: auto;
+		margin-top: 0;
+		margin-left: 0;
 		z-index: -1;
 	}
 	.about-me__title, .about-me__introduction, #about-me p {
