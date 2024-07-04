@@ -367,5 +367,5 @@ input[type="submit"] {
 
 .carousel-item img {
 	height: 46.875vw;
-	max-height: 900px;
+	max-height: 900px !important;
 }
