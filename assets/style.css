@@ -344,7 +344,12 @@ input[type="submit"] {
 
 @media all and (max-width: 750px) {
 	.about-me__introduction, #about-me p {
-		width: 550px;
+		width: 90vw;
+	}
+	.picture {
+		width: 90vw;
+		max-width: 470px;
+		height: auto;
 	}
 }
 
